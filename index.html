@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mijn Java webpagina</title>
+<script
+src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$("#knop").click(function(){
+var naam = $("#naam").val();
+let leeftijd = $("#leeftijd").val();
+var werk = $("#werk").val();
+var bezigheid = $("#bezigheid").val();
+var film = $("#film").val();
+  document.write(
+"Ik ben " + naam +
+" ik ben " + leeftijd + " jaar oud " +
+" werkzaam als " + werk +
+" mijn favoriete bezigheid is " + bezigheid +
+" tot slot is mijn favoriete film " + film );
+});
+});
+</script>
+</head>
+
+<body>
+<form>
+Wat is uw naam?
+<input type="text" id="naam"><br><br>
+Wat is uw leeftijd?
+<input type="number" id="leeftijd"><br><br>
+Wat wat doet u voor werk?
+<input type="text" id="werk"><br><br>
+Wat is uw favoriete bezigheid?
+<input type="text" id="bezigheid"><br><br>
+Wat is uw favoriete film?
+<input type="text" id="film"><br><br>
+<input id="knop" name="knop" type="button" value="Resultaat">
+</form>
+</body>
+</html>
